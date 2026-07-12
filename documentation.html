@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation — Nexiqo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="blob blob1"></div><div class="blob blob2"></div><div class="blob blob3"></div>
+<div class="scrim"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
+        <path d="M6 32V10L8 8H12L30 28V32H26L8 12V32H6Z" fill="url(#navN1)"/>
+        <path d="M6 32L12 26V32H6Z" fill="#071022"/>
+        <rect x="28" y="8" width="6" height="16" rx="1" fill="url(#navN2)"/>
+        <defs>
+          <linearGradient id="navN1" x1="6" y1="8" x2="30" y2="32"><stop stop-color="#1B3E7A"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+          <linearGradient id="navN2" x1="28" y1="8" x2="34" y2="24"><stop stop-color="#4C8DFF"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+        </defs>
+      </svg>
+      <div class="brand-stack">
+        <span class="wordmark"><span class="w-nexi">NEXI</span><span class="w-qo">QO</span></span>
+        <span class="tagline">Intelligence Beyond Numbers</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class=""><a class="top-link" href="index.html">Home</a></li>
+      <li class="dropdown ">
+        <a class="top-link" href="platform.html">Platform ▾</a>
+        <div class="dropdown-menu">
+          <a href="platform.html#upload">Upload Financial Statements</a>
+          <a href="platform.html#dashboard">Financial Dashboard</a>
+          <a href="platform.html#forecast">Forecast</a>
+          <a href="platform.html#report">Executive Report</a>
+        </div>
+      </li>
+      <li class=""><a class="top-link" href="demo.html">Demo</a></li>
+      <li class="active"><a class="top-link" href="documentation.html">Documentation</a></li>
+      <li class=""><a class="top-link" href="about.html">About</a></li>
+      <li class=""><a class="top-link" href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="platform.html">Launch Platform</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>METHODOLOGY</span>
+    <h1 class="page-title">Documentation.</h1>
+    <p class="page-sub">How the engine calculates everything it shows you — nothing is a black box.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px;">
+  <div class="wrap docs-grid">
+    <nav class="docs-nav">
+      <a href="#ratios">Ratio Definitions</a>
+      <a href="#health-score">Financial Health Score</a>
+      <a href="#dupont">DuPont Decomposition</a>
+      <a href="#data">Data Sources</a>
+      <a href="#template">Upload Template</a>
+      <a href="#stack">Tech Stack</a>
+    </nav>
+    <div>
+      <div class="docs-section reveal" id="ratios">
+        <h3>Ratio Definitions</h3>
+        <table class="docs-table">
+          <tr><th>Ratio</th><th>Formula</th></tr>
+          <tr><td>EBITDA Margin</td><td>EBITDA / Revenue</td></tr>
+          <tr><td>Net Margin</td><td>Net Profit / Revenue</td></tr>
+          <tr><td>ROE</td><td>Net Profit / Total Equity</td></tr>
+          <tr><td>ROA</td><td>Net Profit / Total Assets</td></tr>
+          <tr><td>Debt/Equity</td><td>Total Debt / Total Equity</td></tr>
+          <tr><td>Interest Coverage</td><td>EBIT / Interest Expense</td></tr>
+          <tr><td>Asset Turnover</td><td>Revenue / Total Assets</td></tr>
+          <tr><td>Cash Conversion</td><td>Operating Cash Flow / EBITDA</td></tr>
+          <tr><td>FCF Margin</td><td>Free Cash Flow / Revenue</td></tr>
+        </table>
+      </div>
+
+      <div class="docs-section reveal" id="health-score">
+        <h3>Financial Health Score (0–100)</h3>
+        <p>A transparent, rule-based composite — every point is traceable to a real computed ratio, not a hidden model.</p>
+        <table class="docs-table">
+          <tr><th>Component</th><th>Weight</th><th>Based on</th></tr>
+          <tr><td>Profitability</td><td>25 pts</td><td>EBITDA margin level + YoY trend</td></tr>
+          <tr><td>Growth</td><td>15 pts</td><td>Revenue CAGR</td></tr>
+          <tr><td>Leverage</td><td>20 pts</td><td>Debt/Equity ratio</td></tr>
+          <tr><td>Coverage</td><td>15 pts</td><td>Interest coverage ratio</td></tr>
+          <tr><td>Cash Quality</td><td>15 pts</td><td>Operating CF / EBITDA conversion</td></tr>
+          <tr><td>Free Cash Flow</td><td>10 pts</td><td>FCF margin</td></tr>
+        </table>
+      </div>
+
+      <div class="docs-section reveal" id="dupont">
+        <h3>DuPont ROE Decomposition</h3>
+        <p>ROE = Net Margin × Asset Turnover × Equity Multiplier. This breaks return on equity into <em>why</em> it moved — margin-driven, efficiency-driven, or leverage-driven — rather than reporting a single number.</p>
+      </div>
+
+      <div class="docs-section reveal" id="data">
+        <h3>Data Sources</h3>
+        <p>Sample company figures (Infosys, TCS, Reliance Industries) are consolidated, in ₹ Crores, for FY2021–FY2025, sourced from public financial statements as reported on screener.in. Live market data (price, market cap, P/E) is pulled from Yahoo Finance at the moment you click "Fetch."</p>
+      </div>
+
+      <div class="docs-section reveal" id="template">
+        <h3>Upload Template</h3>
+        <p>To analyze your own company, use the standardized 3-sheet Excel template: <strong>P&amp;L</strong>, <strong>Balance Sheet</strong>, <strong>Cash Flow</strong> — each with a <code>Year</code> column and up to 5 years of data. Available for download from the Platform page.</p>
+      </div>
+
+      <div class="docs-section reveal" id="stack">
+        <h3>Tech Stack</h3>
+        <div class="tech-badges">
+          <span>Python</span><span>Streamlit</span><span>Pandas</span><span>NumPy</span><span>yfinance</span><span>ReportLab</span><span>Power BI</span><span>Alteryx</span><span>Excel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg width="24" height="24" viewBox="0 0 40 40" fill="none">
+            <path d="M6 32V10L8 8H12L30 28V32H26L8 12V32H6Z" fill="url(#footN1)"/>
+            <path d="M6 32L12 26V32H6Z" fill="#071022"/>
+            <rect x="28" y="8" width="6" height="16" rx="1" fill="url(#footN2)"/>
+            <defs>
+              <linearGradient id="footN1" x1="6" y1="8" x2="30" y2="32"><stop stop-color="#1B3E7A"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+              <linearGradient id="footN2" x1="28" y1="8" x2="34" y2="24"><stop stop-color="#4C8DFF"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+            </defs>
+          </svg>
+          <span class="wordmark"><span class="w-nexi">NEXI</span><span class="w-qo">QO</span></span>
+        </div>
+        <div class="footer-tagline">INTELLIGENCE BEYOND NUMBERS</div>
+      </div>
+      <div style="font-size:13.5px;color:var(--text-muted);">Enterprise Financial Intelligence Platform</div>
+    </div>
+    <div class="bottom-row">
+      <span>© 2026 Nexiqo. Built by Jaya Agarwal.</span>
+      <span class="mono">FINANCIAL INTELLIGENCE · RISK INTELLIGENCE</span>
+    </div>
+  </div>
+</footer>
+<script src="common.js"></script>
+</body>
+</html>

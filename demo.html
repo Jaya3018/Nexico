@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo — Nexiqo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="blob blob1"></div><div class="blob blob2"></div><div class="blob blob3"></div>
+<div class="scrim"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
+        <path d="M6 32V10L8 8H12L30 28V32H26L8 12V32H6Z" fill="url(#navN1)"/>
+        <path d="M6 32L12 26V32H6Z" fill="#071022"/>
+        <rect x="28" y="8" width="6" height="16" rx="1" fill="url(#navN2)"/>
+        <defs>
+          <linearGradient id="navN1" x1="6" y1="8" x2="30" y2="32"><stop stop-color="#1B3E7A"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+          <linearGradient id="navN2" x1="28" y1="8" x2="34" y2="24"><stop stop-color="#4C8DFF"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+        </defs>
+      </svg>
+      <div class="brand-stack">
+        <span class="wordmark"><span class="w-nexi">NEXI</span><span class="w-qo">QO</span></span>
+        <span class="tagline">Intelligence Beyond Numbers</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class=""><a class="top-link" href="index.html">Home</a></li>
+      <li class="dropdown ">
+        <a class="top-link" href="platform.html">Platform ▾</a>
+        <div class="dropdown-menu">
+          <a href="platform.html#upload">Upload Financial Statements</a>
+          <a href="platform.html#dashboard">Financial Dashboard</a>
+          <a href="platform.html#forecast">Forecast</a>
+          <a href="platform.html#report">Executive Report</a>
+        </div>
+      </li>
+      <li class="active"><a class="top-link" href="demo.html">Demo</a></li>
+      <li class=""><a class="top-link" href="documentation.html">Documentation</a></li>
+      <li class=""><a class="top-link" href="about.html">About</a></li>
+      <li class=""><a class="top-link" href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="platform.html">Launch Platform</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>HOW IT WORKS</span>
+    <h1 class="page-title">From raw statements to a decision, in <span class="grad">under a minute</span>.</h1>
+    <p class="page-sub">No manual ratio calculation. No re-building the same Excel model for every company you cover.</p>
+    <div class="hero-ctas"><a class="btn-primary" href="platform.html">Try It Live →</a></div>
+  </div>
+</header>
+
+<section style="padding-top:20px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">WORKFLOW</span>
+      <h2>Four steps. Fully automated.</h2>
+    </div>
+    <div class="steps-row">
+      <div class="step-card panel reveal"><div class="step-num">01</div><h4>Select / Upload</h4><p>Pick a sample company or upload your own standardized financials.</p></div>
+      <div class="step-card panel reveal"><div class="step-num">02</div><h4>Analyze</h4><p>20+ ratios, DuPont breakdown, and Financial Health Score computed instantly.</p></div>
+      <div class="step-card panel reveal"><div class="step-num">03</div><h4>Forecast &amp; Benchmark</h4><p>Adjustable growth assumptions plus live peer market data.</p></div>
+      <div class="step-card panel reveal"><div class="step-num">04</div><h4>Report</h4><p>One-click downloadable executive PDF report.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">WHY IT MATTERS</span>
+      <h2>The old way vs. Nexiqo.</h2>
+    </div>
+    <div class="panel reveal" style="overflow-x:auto;">
+      <table class="compare-table">
+        <tr><th>Step</th><th>Traditional Analysis</th><th>Nexiqo</th></tr>
+        <tr><td>Ratio calculation</td><td>Manual, rebuilt per company in Excel</td><td class="win">Automated, instant</td></tr>
+        <tr><td>Consistency</td><td>Varies analyst to analyst</td><td class="win">Same rigorous methodology every time</td></tr>
+        <tr><td>Forecasting</td><td>Static single-scenario Excel model</td><td class="win">Adjustable growth assumption, live</td></tr>
+        <tr><td>Market context</td><td>Manually pulled, quickly stale</td><td class="win">Live market data on demand</td></tr>
+        <tr><td>Output</td><td>Raw spreadsheet</td><td class="win">Formatted executive PDF report</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="risk">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">CASE STUDY</span>
+      <h2>Risk Intelligence Suite</h2>
+      <p>Credit scorecard modeling, NPA stress-testing, and fraud-flag detection — built in Alteryx and Power BI, the tools used day-to-day in risk consulting.</p>
+    </div>
+    <div class="panel reveal" style="padding:40px;text-align:center;">
+      <p class="mono" style="color:var(--emerald);margin-bottom:10px;">⚠ POWER BI DASHBOARD — PUBLISH TO WEB PENDING</p>
+      <p style="color:var(--text-muted);max-width:520px;margin:0 auto;">Once published via Power BI's "Publish to Web," the live embeddable dashboard will render here — credit portfolio risk, bank asset-quality stress-testing, and fraud-flag triage in one view.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg width="24" height="24" viewBox="0 0 40 40" fill="none">
+            <path d="M6 32V10L8 8H12L30 28V32H26L8 12V32H6Z" fill="url(#footN1)"/>
+            <path d="M6 32L12 26V32H6Z" fill="#071022"/>
+            <rect x="28" y="8" width="6" height="16" rx="1" fill="url(#footN2)"/>
+            <defs>
+              <linearGradient id="footN1" x1="6" y1="8" x2="30" y2="32"><stop stop-color="#1B3E7A"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+              <linearGradient id="footN2" x1="28" y1="8" x2="34" y2="24"><stop stop-color="#4C8DFF"/><stop offset="1" stop-color="#12E19F"/></linearGradient>
+            </defs>
+          </svg>
+          <span class="wordmark"><span class="w-nexi">NEXI</span><span class="w-qo">QO</span></span>
+        </div>
+        <div class="footer-tagline">INTELLIGENCE BEYOND NUMBERS</div>
+      </div>
+      <div style="font-size:13.5px;color:var(--text-muted);">Enterprise Financial Intelligence Platform</div>
+    </div>
+    <div class="bottom-row">
+      <span>© 2026 Nexiqo. Built by Jaya Agarwal.</span>
+      <span class="mono">FINANCIAL INTELLIGENCE · RISK INTELLIGENCE</span>
+    </div>
+  </div>
+</footer>
+<script src="common.js"></script>
+</body>
+</html>
